@@ -5,8 +5,8 @@ Backup and delete the following files before using this:
 
 `~/.local/share/hyde/wallbash/theme/waybar.dcol`
 
-`/home/dim/.local/lib/hyde/weather.py`
+`~/.local/lib/hyde/weather.py`
 
-`/home/dim/.local/lib/hyde/wbarstylegen.sh`
+`~/.local/lib/hyde/wbarstylegen.sh`
 
-`/home/dim/.local/lib/hyde/wbarconfgen.sh`
+`~/.local/lib/hyde/wbarconfgen.sh`
