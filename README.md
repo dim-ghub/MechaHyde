@@ -1,2 +1,2 @@
-# HyprMoon
-My personal hyprland dotfiles, this is very much in beta
+# MechaHyde
+My edits to mechabar to get it working on hyde with wallbash support
