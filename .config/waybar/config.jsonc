@@ -248,6 +248,8 @@
 	  "format": "{}",
 	  "exec": "cava.sh waybar",
 	  "restart-interval": 1,
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
 	  "hide-empty": true
   },
 
