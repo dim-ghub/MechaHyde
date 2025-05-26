@@ -37,7 +37,11 @@ tooltip label {
 
 /* ──────────────────────────────────────────────────────────────┤ general ├───
 */
-#custom-ws,
+#custom-ws {
+  opacity: 1;
+  color: @module-fg;
+  padding: 4px 0px;
+}
 #workspaces,
 #window,
 #custom-weather,
@@ -46,8 +50,8 @@ tooltip label {
 #idle_inhibitor,
 #clock,
 #pulseaudio.microphone,
-#custom-power-profiles-daemon,
-#custom-update,
+#custom-workflows,
+#custom-animations,
 #custom-spotify,
 #pulseaudio,
 #backlight,
@@ -83,11 +87,20 @@ tooltip label {
 /* ──────────────────────────────────────────────────────────┤ window icon ├───
 */
 #custom-ws {
-  background: @main-bg;
+  color: @main-bg;
+  background: @power;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 2px 4px 2px 0;
+  padding: 0 6px 0 9px;
 }
 
 #custom-ws:hover {
   color: @hover-fg;
+  background: @hover-bg;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 /* ───────────────────────────────────────────────────────────┤ workspaces ├───
@@ -260,32 +273,32 @@ tooltip label {
 */
 #pulseaudio.microphone {
   background: @tray;
-  padding: 0 14px 0 6px;
+  padding: 0 6px 0 6px;
 }
 
 #pulseaudio.microphone:hover {
   color: @hover-fg;
 }
 
-/* ────────────────────────────────────────────────────────────┤ custom-power-profiles-daemon ├───
+/* ────────────────────────────────────────────────────────────┤ custom-workflows ├───
 */
-#custom-power-profiles-daemon {
+#custom-workflows {
   background: @tray;
-  padding-right: 10px;
+  padding-right: 6px;
 }
 
-#custom-power-profiles-daemon:hover {
+#custom-workflows:hover {
   color: @hover-fg;
 }
 
 /* ────────────────────────────────────────────────────────┤ system update ├───
 */
-#custom-update {
-  padding-right: 10px;
+#custom-animations {
+  padding-right: 6px;
   background: @tray;
 }
 
-#custom-update:hover {
+#custom-animations:hover {
   color: @hover-fg;
 }
 
@@ -383,6 +396,22 @@ tooltip label {
   box-shadow: none;
 }
 
+#custom-ws {
+  color: @main-bg;
+  background: @power;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 2px 0px 2px 4px;
+  padding: 0 6px 0 9px;
+}
+
+#custom-ws:hover {
+  color: @hover-fg;
+  background: @hover-bg;
+  text-shadow: none;
+  box-shadow: none;
+}
 /* ───────────────────────────────────────────────────────────┤ font sizes ├───
 */
 /*

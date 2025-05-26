@@ -10,7 +10,10 @@
   // ──────────────────────────────────────────────────────────┤ positions ├───
 
   "modules-left": [
-    "custom/left1",
+    "custom/ws",
+    "custom/rightin1",
+    "custom/right3",
+    "custom/right4",
 
     "hyprland/workspaces",  // workspaces
     "custom/right1",
@@ -20,7 +23,6 @@
   ],
 
   "modules-center": [
-    "custom/paddc",
     "custom/left2",
     "custom/weather",   // temperature
 
@@ -44,9 +46,9 @@
     "custom/right4",
 
     "pulseaudio#microphone",          // wi-fi
-    "custom/power-profiles-daemon",            // bluetooth
-    "custom/update",        // system update
-    "custom/right5",
+    "custom/workflows",            // bluetooth
+    "custom/animations",        // system update
+    "custom/right5"
   ],
 
   "modules-right": [
@@ -68,19 +70,33 @@
   // ────────────────────────────────────────────────────────┤ window icon ├───
 
   "custom/ws": {
-    "exec": "~/.config/waybar/scripts/current-theme.sh",
-    "return-type": "json",
-    "format": " 󰤕 ",
-    "on-click": "~/.config/waybar/scripts/theme-switcher.sh",
+    "format": " ━━━ ",
+    "on-click": "hyprctl dispatch overview:toggle",
     "min-length": 3,
-    "max-length": 3
+    "max-length": 7
+  },
+
+  "custom/workflows": {
+    "return-type": "json",
+    "format": " ",
+    "on-click": "hyprctl dispatch exec 'workflows.sh -S'",
+    "min-length": 1,
+    "max-length": 5
+  },
+
+  "custom/animations": {
+    "return-type": "json",
+    "format": " ",
+    "on-click": "hyprctl dispatch exec 'animations.sh -S'",
+    "min-length": 1,
+    "max-length": 5
   },
 
   // ─────────────────────────────────────────────────────────┤ workspaces ├───
 
   "hyprland/workspaces": {
-    "on-scroll-up": "hyprctl dispatch workspace -1",
-    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "on-scroll-up": "hyprctl dispatch workspace +1",
+    "on-scroll-down": "hyprctl dispatch workspace -1",
     "persistent-workspaces": {
       "1": [],
       "2": [],
@@ -304,8 +320,8 @@
       "on-click-right": "mode"
     },
 
-    "min-length": 11,
-    "max-length": 11
+    "min-length": 13,
+    "max-length": 13
   },
   // ──────────────────────────────────────────────────────────────┤ wi-fi ├───
 

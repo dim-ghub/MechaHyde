@@ -15,20 +15,20 @@
 @define-color blue            #89b4fa;
 @define-color lavender        #b4befe;
 @define-color text            #FFFFFF;
-@define-color subtext1        #646A76;
-@define-color subtext0        #CCDBFF;
-@define-color overlay2        #AABEF0;
-@define-color overlay1        #9AAFE6;
-@define-color overlay0        #7A8FC2;
-@define-color surface2        #6577A3;
-@define-color surface1        #57678F;
-@define-color surface0        #4B597D;
-@define-color base            #3A486B;
-@define-color mantle          #293452;
-@define-color crust           #0D111B;
+@define-color subtext1        #94B5CD;
+@define-color subtext0        #CCE2FF;
+@define-color overlay2        #AAC8F0;
+@define-color overlay1        #9ABAE6;
+@define-color overlay0        #7A99C2;
+@define-color surface2        #657FA3;
+@define-color surface1        #576F8F;
+@define-color surface0        #4B607D;
+@define-color base            #3A4F6B;
+@define-color mantle          #293A52;
+@define-color crust           #293854;
 
-@define-color white           #FFFFFF;
-@define-color black           #0D111B;
+@define-color white           #ffffff;
+@define-color black           #000000;
 
 /* 
   bg - background
